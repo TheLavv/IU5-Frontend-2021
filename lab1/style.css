@@ -1,0 +1,38 @@
+.article_title {
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.article_title:hover {
+    font-size: 2.5rem;
+    color: darkmagenta;
+}
+
+.article_title::first-letter {
+    font-size: 1.2em;
+    color: darkmagenta;
+}
+
+html {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 50px;
+}
+
+li {
+    padding-bottom: 10px;
+}
+
+.body_format {
+    background-color: #e7d7f7;
+    font-size: large;
+}
+
+.default_text {
+    padding-right: 150px;
+}
+
+.important {
+    font-size: 120%;
+    color: #d30707;
+}
