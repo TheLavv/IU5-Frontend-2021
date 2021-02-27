@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://iu-5-frontend-2021-m7nl2qfjg-thelavv.vercel.app/lab1/style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>NGINX изнутри</title>
     <style>
         #info {
@@ -55,7 +55,7 @@
             <img src="https://habrastorage.org/getpro/habr/post_images/301/4dd/b52/3014ddb5204804c1e7f92c7de673ed35.png" width="40%" alt="master process" hspace="50" align="left"> Чтобы лучше представлять устройство, сперва необходимо понять как NGINX
             запускается.
             <br>У NGINX есть один <span class="important">мастер-процесс</span> (который от имени суперпользователя выполняет такие операции, как чтение конфигурации и открытие портов), а также некоторое количество рабочих и вспомогательных процессов.
-            <img src="https://iu-5-frontend-2021-m7nl2qfjg-thelavv.vercel.app/lab1/images/nginx_processes.png" alt="nginx processes" align="bottom" width="30%" vspace="30">
+            <img src="./images/nginx_processes.png" alt="nginx processes" align="bottom" width="30%" vspace="30">
             <br>На 4-х ядерном сервере мастер-процесс NGINX создает 4 рабочих процесса и пару вспомогательных кэш-процессов, которые управляют содержимым кэша на жестком диске.
         </p>
     </div>
