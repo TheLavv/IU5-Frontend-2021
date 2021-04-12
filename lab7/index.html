@@ -5,11 +5,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab7</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
 </head>
 
 <body>
-
+    <div class="navbar">
+        <span class="navbar-header">Weather</span>
+        <div class="navbar-searchContainer">
+            <input class="navbar-searchContainer-searchField" placeholder="Search...">
+            <input type="button" class="navbar-searchContainer-button">
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-infoCard">
+            <div class="content-infoCard-main">
+                <div class="content-infoCard-main-city">
+                </div>
+                <div class="temp">
+                </div>
+            </div>
+            <div class="content-infoCard-additional">
+                <img class="content-infoCard-additional-icon">
+                <div class="content-infoCard-additional-info">
+                    <span class="content-infoCard-additional-info-status"></span>
+                    <span class="content-infoCard-additional-info-humidity"></span>
+                    <span class="content-infoCard-additional-info-cloudiness"></span>
+                    <span class="content-infoCard-additional-info-wind"></span>
+                </div>
+            </div>
+            <div class="content-infoCard-forecast">
+                <div class="content-infoCard-forecast-card" id="1">
+                    <span class="content-infoCard-forecast-card-time"></span>
+                    <span class="content-infoCard-forecast-card-date"></span>
+                    <span class="content-infoCard-forecast-card-temp"></span>
+                    <img class="content-infoCard-forecast-card-icon">
+                </div>
+                <div class="content-infoCard-forecast-card" id="2">
+                    <span class="content-infoCard-forecast-card-time"></span>
+                    <span class="content-infoCard-forecast-card-date"></span>
+                    <span class="content-infoCard-forecast-card-temp"></span>
+                    <img class="content-infoCard-forecast-card-icon">
+                </div>
+                <div class="content-infoCard-forecast-card" id="3">
+                    <span class="content-infoCard-forecast-card-time"></span>
+                    <span class="content-infoCard-forecast-card-date"></span>
+                    <span class="content-infoCard-forecast-card-temp"></span>
+                    <img class="content-infoCard-forecast-card-icon">
+                </div>
+                <div class="content-infoCard-forecast-card" id="4">
+                    <span class="content-infoCard-forecast-card-time"></span>
+                    <span class="content-infoCard-forecast-card-date"></span>
+                    <span class="content-infoCard-forecast-card-temp"></span>
+                    <img class="content-infoCard-forecast-card-icon">
+                </div>
+                <div class="content-infoCard-forecast-card" id="5">
+                    <span class="content-infoCard-forecast-card-time"></span>
+                    <span class="content-infoCard-forecast-card-date"></span>
+                    <span class="content-infoCard-forecast-card-temp"></span>
+                    <img class="content-infoCard-forecast-card-icon">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
+<script src="./script.js"></script>
 
 </html>
