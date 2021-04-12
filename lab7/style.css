@@ -27,7 +27,7 @@ body {
     font-family: Wave-Regular;
     color: rgb(160, 88, 189);
     font-weight: 600;
-    margin-left: 80px;
+    margin-left: 10px;
 }
 
 .navbar-searchContainer-searchField {
@@ -195,6 +195,15 @@ body {
 }
 
 @media screen and (max-width: 450px) {
+    .navbar {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #d9c3cf;
+        margin: 0px;
+        height: 100px;
+        width: 100%;
+    }
     .content-infoCard {
         width: 80%;
         background: repeat center center fixed;
