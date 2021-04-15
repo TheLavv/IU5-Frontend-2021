@@ -1,0 +1,233 @@
+@font-face {
+    font-family: Wave-Regular;
+    src: url(fonts/Wave-Regular.ttf);
+}
+
+html {
+    background-color: #d9c3cf;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    margin: 0px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #d9c3cf;
+    margin: 0px;
+    height: 100px;
+    width: 100%;
+}
+
+.navbar-header {
+    font-size: 50px;
+    font-family: Wave-Regular;
+    color: rgb(160, 88, 189);
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.navbar-searchContainer-searchField {
+    font-size: 30px;
+    height: 50px;
+    width: 450px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+
+.navbar-searchContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    text-align: right;
+}
+
+.navbar-searchContainer-button {
+    background-image: url('icons/magnifier-1_icon-icons.com_56924.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-infoCard {
+    width: 80%;
+    height: 550px;
+    background: repeat center center fixed;
+    background-color: white;
+    border-radius: 50px;
+    margin-top: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 70px;
+    text-shadow: 4px 2px 1px #181010;
+    color: rgb(136, 252, 90);
+    overflow: hidden;
+}
+
+.content-infoCard-main {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.content-infoCard-main-city {
+    margin-left: 8%;
+}
+
+.temp {
+    margin-left: 10px;
+    display: block;
+    font-size: 50px;
+}
+
+.content-infoCard-additional {
+    height: 170px;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 6%;
+}
+
+.content-infoCard-additional-icon {
+    width: 120px;
+    height: 120px;
+}
+
+.content-infoCard-additional-info {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content-infoCard-forecast {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 235px;
+    font-size: 20px;
+}
+
+.content-infoCard-forecast-card {
+    border: 4px solid rgb(160, 88, 189);
+    background-color: rgba(160, 88, 189, 0.6);
+    border-radius: 10px;
+    display: flex;
+    height: 180px;
+    padding: 10px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-infoCard-forecast-card-temp {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 860px) {
+    .navbar-header {
+        font-size: 40px;
+    }
+    .content-infoCard-additional-info {
+        font-size: 20px;
+    }
+    .navbar-searchContainer-searchField {
+        font-size: 20px;
+        width: 50%;
+    }
+    .content-infoCard {
+        width: 80%;
+        height: 550px;
+        background: repeat center center fixed;
+        background-color: white;
+        border-radius: 50px;
+        margin-top: 50px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 50px;
+        text-shadow: 4px 2px 1px #181010;
+        color: rgb(136, 252, 90);
+    }
+    .temp {
+        margin-left: 10px;
+        display: block;
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .content-infoCard {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .content-infoCard-forecast {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        height: 700px;
+        flex-wrap: wrap;
+        font-size: 20px;
+    }
+    .content-infoCard-forecast-card {
+        border: 4px solid rgb(160, 88, 189);
+        background-color: rgba(160, 88, 189, 0.6);
+        border-radius: 10px;
+        display: flex;
+        height: 180px;
+        padding: 10px;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .navbar {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #d9c3cf;
+        margin: 0px;
+        height: 100px;
+        width: 100%;
+    }
+    .content-infoCard {
+        width: 80%;
+        background: repeat center center fixed;
+        background-color: white;
+        border-radius: 50px;
+        margin-top: 50px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 40px;
+        text-shadow: 4px 2px 1px #181010;
+        color: rgb(136, 252, 90);
+    }
+    .temp {
+        margin-left: 10px;
+        display: block;
+        font-size: 30px;
+    }
+    .content-infoCard-additional-icon {
+        width: 80px;
+        height: 80px;
+    }
+    .content-infoCard-additional {
+        padding-top: 0px;
+    }
+    .content-infoCard-additional-info {
+        font-size: 15px;
+    }
+}
