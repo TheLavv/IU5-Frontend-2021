@@ -1,0 +1,103 @@
+@font-face {
+    font-family: Wave-Regular;
+    src: url(../fonts/Wave-Regular.ttf);
+}
+
+.page {
+    background-color: rgb(19, 23, 27);
+    min-height: 100vh;
+    min-width: 320px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.page-header {
+    color: rgb(161, 83, 172);
+    font-size: 60px;
+    font-family: sans-serif;
+}
+
+.page-content {
+    font-size: 40px;
+    color: white;
+    padding: 40px;
+    margin-top: 30px;
+    background-color: rgb(19, 23, 27);
+    border: 2px solid rgb(190, 190, 190);
+    border-radius: 20px;
+    min-height: 80vh;
+    width: 80%;
+}
+
+.page-content-input {
+    min-height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.page-content-input textarea {
+    font-size: 40px;
+    color: white;
+    background-color: rgb(19, 23, 27);
+    border: none;
+    min-height: 60px;
+    width: 80%;
+    overflow: hidden;
+}
+
+.page-content-input button {
+    font-size: 40px;
+    color: rgb(161, 83, 172);
+    min-height: 80px;
+    margin-left: 30px;
+    background-color: rgb(43, 49, 56);
+}
+
+.page-content p {
+    margin: 0px;
+}
+
+.page-content hr {
+    background-color: rgb(161, 83, 172);
+    height: 2px;
+    border: none;
+}
+
+@media screen and (max-width: 700px) {
+    .page-header {
+        font-size: 50px;
+    }
+    .page-content {
+        font-size: 30px;
+    }
+    .page-content-input textarea {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .page-header {
+        font-size: 40px;
+    }
+    .page-content {
+        font-size: 20px;
+    }
+    .page-content-input {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .page-content-input textarea {
+        font-size: 20px;
+    }
+    .page-content-input button {
+        font-size: 30px;
+        color: rgb(161, 83, 172);
+        min-height: 60px;
+        width: 50%;
+        margin-left: 0px;
+        background-color: rgb(43, 49, 56);
+    }
+}

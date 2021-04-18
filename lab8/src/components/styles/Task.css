@@ -1,0 +1,71 @@
+.container {
+    min-height: 60px;
+    min-width: 60%;
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.container input[type=checkbox] {
+    height: 40px;
+    width: 40px;
+}
+
+.container-textarea {
+    font-size: 40px;
+    color: white;
+    background-color: rgb(19, 23, 27);
+    border: none;
+    min-height: 20px;
+    width: 80%;
+    overflow: visible;
+    margin-left: 20px;
+    outline: none;
+    text-decoration: none;
+}
+
+.container-textarea:hover, .container-textarea:focus {
+    color: rgb(161, 83, 172);
+}
+
+.container-button {
+    font-size: 40px;
+    color: rgb(161, 83, 172);
+    min-height: 80px;
+    margin-left: 30px;
+    background-color: rgb(43, 49, 56);
+}
+
+.container-textarea-doneTask {
+    font-size: 40px;
+    color: white;
+    background-color: rgb(19, 23, 27);
+    border: none;
+    min-height: 20px;
+    width: 80%;
+    overflow: visible;
+    margin-left: 20px;
+    outline: none;
+    text-decoration: line-through;
+}
+
+@media screen and (max-width: 700px) {
+    .container-textarea {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .container-textarea {
+        font-size: 20px;
+    }
+    .container-button {
+        min-height: 60px;
+        width: 80px;
+        font-size: 20px;
+    }
+}
