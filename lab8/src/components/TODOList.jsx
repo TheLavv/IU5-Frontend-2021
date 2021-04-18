@@ -33,7 +33,7 @@ function TODOList() {
             localStorage.setItem(`index${el.index}`, el.index);
             localStorage.setItem(`value${el.index}`, el.value);
             localStorage.setItem(`done${el.index}`, el.done);
-        })
+        });
     }
     const changeTask = (event) => {
         localStorage.setItem(`value${(event.target.id)[2]}`, event.target.value);
