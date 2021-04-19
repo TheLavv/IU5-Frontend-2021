@@ -54,13 +54,13 @@
 }
 
 @media screen and (max-width: 700px) {
-    .container-textarea {
+    .container-textarea, .container-textarea-doneTask {
         font-size: 30px;
     }
 }
 
 @media screen and (max-width: 520px) {
-    .container-textarea {
+    .container-textarea, .container-textarea-doneTask {
         font-size: 20px;
     }
     .container-button {

@@ -1,23 +1,27 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './styles/TODOList.css'
 import Task from './Task'
 import InputButton from './InputButton'
 
 function TODOList() {
     const [tasks, setTasks] = React.useState([]);
-    if (tasks.length === 0)
-    {
-        for (let i = 0, j = 0; true; i++)
+    let newTaskArr = [];
+    useEffect(() => {
+        if (tasks.length === 0)
         {
-            if (j === localStorage.length / 3)
-                break;
-            if (localStorage.getItem(`index${i.toString()}`) !== null)
+            for (let i = 0, j = 0; true; i++)
             {
-                tasks.push({index: localStorage.getItem(`index${i.toString()}`), value: localStorage.getItem(`value${i.toString()}`), done: Number(localStorage.getItem(`done${i.toString()}`))});
-                j++;
+                if (j === localStorage.length / 3)
+                    break;
+                if (localStorage.getItem(`index${i.toString()}`) !== null)
+                {
+                    newTaskArr.push({index: localStorage.getItem(`index${i.toString()}`), value: localStorage.getItem(`value${i.toString()}`), done: Number(localStorage.getItem(`done${i.toString()}`))});
+                    j++;
+                }
             }
+            setTasks(newTaskArr);
         }
-    }
+    })
     const toggleTask = (event) => {
         let newArr = tasks.map((el) => {
             if (Number(el.index) === Number(event.target.id))
