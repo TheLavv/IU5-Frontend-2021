@@ -5,7 +5,7 @@ import UserInfo from './components/UserInfo/UserInfo'
 import UserNotFound from './components/UserNotFound/UserNotFound'
 
 const Routes = () => (
-    <BrowserRouter basename="/lab9/build/">
+    <BrowserRouter basename="/lab9/build/index.html/">
         <Switch>
           <Route exact path='/' component={Finder} />
           <Route exact path='/userInfo/:user' component={UserInfo} />
