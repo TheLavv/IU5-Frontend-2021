@@ -1,0 +1,75 @@
+@font-face {
+    font-family: Wave-Regular;
+    src: url(../../assets/fonts/Wave-Regular.ttf);
+}
+
+.finder {
+    color: rgb(161, 83, 172);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.finderBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0px 0px 0px;
+    border: 2px solid rgb(76, 89, 145);
+    border-radius: 10px;
+    padding: 10px;
+    width: 60%;
+    height: 200px;
+}
+
+.finderBox-text {
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.finderBox-input {
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    height: 40px;
+    width: 50%;
+    background-color: rgb(19, 23, 27);
+    font-size: 20px;
+    color: white;
+}
+
+.finderBox-input:hover, .finderBox-input:focus {
+    border: 1px solid rgb(76, 89, 145);
+}
+
+.finderBox-btn {
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    color:rgb(161, 83, 172);
+    font-size: 30px;
+    background-color: rgb(32, 36, 39);
+}
+
+.finder-header {
+    font-size: 60px;
+    font-family: Wave-Regular;
+}
+
+@media screen and (max-width: 500px) {
+    .finderBox-text {
+        font-size: 25px;
+    }    
+    .finderBox {
+        width: 80%;
+        height: 200px;
+    }
+    .finderBox-input {
+        width: 80%;
+    }
+}
